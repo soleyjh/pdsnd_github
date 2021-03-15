@@ -12,9 +12,11 @@ statistics on that data.
 
 ### Files used
 Bikeshare.py
-Washington.csv
-New_York_City.csv
-Chicago.csv
+
+These are the Data Files which are necessary as inputs to the program:
+  Washington.csv
+  New_York_City.csv
+  Chicago.csv
 
 ### Credits
 As part of the Udacity Nanodegree Program "Programming for Data Science with Python" I used extensive

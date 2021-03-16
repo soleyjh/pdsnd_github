@@ -150,6 +150,20 @@ def trip_duration_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+def print_output(df):
+    """Asks user if they want to see raw data and displays the raw data (in blocks of 5 lines) if they do"""
+
+    # Ensure Valid ('yes' or 'no') User Input
+    ans = ''
+    while ans not in (['no','yes']):
+        ans = str(input('Would you like to see 5 lines of raw data? ')).lower()
+
+    # Iterate and add 5 lines so long as the user keeps saying 'yes'
+    i = 0
+    while ans != 'no':
+        print(df[i:i+5])
+        ans = str(input('Would you like to see 5 additional lines of raw data? ')).lower()
+        i += 5
 
 def user_stats(df):
     """Displays statistics on bikeshare users."""
@@ -179,6 +193,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+<<<<<<< HEAD
 def print_output(df):
     """Asks user if they want to see raw data and displays the raw data (in blocks of 5 lines) if they do"""
 
@@ -195,6 +210,27 @@ def print_output(df):
         i += 5
 
 
+||||||| e21a9d6
+def print_output(df):
+    """Asks user if they want to see raw data and displays the raw data (in blocks of 5 lines) if they do"""
+    
+    # Ensure Valid ('yes' or 'no') User Input
+    ans = ''
+    while ans not in (['no','yes']):
+        ans = str(input('Would you like to see 5 lines of raw data? ')).lower()
+       
+    # Iterate and add 5 lines so long as the user keeps saying 'yes'
+    i = 0
+    while ans != 'no':
+        print(df[i:i+5])
+        ans = str(input('Would you like to see 5 additional lines of raw data? ')).lower()
+        i += 5
+    
+    
+=======
+
+
+>>>>>>> refactoring
 def main():
     while True:
         city, month, day = get_filters()

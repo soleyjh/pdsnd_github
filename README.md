@@ -4,7 +4,7 @@
 March 15, 2021
 
 ### Project Title
-Bikeshare
+Bikeshare Project
 
 ### Description
 Automatically analyzes bikeshare data in three cities (Washington D.C., NYC, Chicago) and provides descriptive
